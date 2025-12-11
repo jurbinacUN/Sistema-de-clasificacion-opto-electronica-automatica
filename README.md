@@ -1,6 +1,6 @@
 # Sistema-de-clasificacion-opto-electronica-automatica
 ## Descripción de proyecto:
-Este proyecto consiste en el diseño y prototipado de un sistema de identificación y clasificación opto-electrónica de manzanas, por medio de sensores TCS3200; donde las manzanasson transportadas a través de una cinta transportadora. El sistema emula un proceso de control de calidad industrial para la selección de frutas.
+Este proyecto consiste en el diseño y prototipado de un sistema de identificación y clasificación opto-electrónica de manzanas, por medio de sensores TCS3200; donde las manzanas son transportadas a través de una cinta transportadora. El sistema emula un proceso de control de calidad industrial para la selección de frutas.
 
 ### Objetivo:
 El objetivo principal es discriminar o clasificar entre "producto válido" (manzanas) y "objetos extraños/desechos". El sistema opera bajo la siguiente lógica:
