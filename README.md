@@ -18,14 +18,23 @@ La lista de componentes electrónicos y materiales utilizados para el montaje f�
 
 * Sensor infrarrojo.
 
-Servomotores.
+* Servomotores.
 
-Motores paso a paso.
+* Motores paso a paso.
 
-FPGA.
+* FPGA.
 ### Construcción física
-Lámina de MDF.
+* Lámina de MDF.
 
-Tubos de PVC.
+* Tubos de PVC.
 
-Neumático.
+* Neumático.
+## Funcionamiento y lógica:
+El sistema funciona mediante un bucle de control continuo:
+
+1. **Arranque:** Se inicia el funcionamiento de los motores que mueven la cinta transportadora, además se inicia la detección de los sensores y el pocesamiento de la FPGA.
+2. **Detección:** El objeto pasa frente al sensor infrarrojo que detecta la presencia de un objeto, luego pasa frente al sensor de color que captura los datos de la frecuencia de la luz capturada.
+
+3. **Procesamiento:** La FPGA compara las lecturas con rangos precalibrados.
+
+4. **
