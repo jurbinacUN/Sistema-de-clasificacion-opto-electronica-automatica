@@ -8,7 +8,11 @@ Sensor infrarrojo.
 
 Servomotores.
 Motores paso a paso.
+
 FPGA.
+
 Lámina de MDF.
+
 Tubos de PVC.
+
 Neumático.
