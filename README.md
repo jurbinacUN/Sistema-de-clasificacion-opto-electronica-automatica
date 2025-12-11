@@ -3,7 +3,9 @@ Sistema de identificación y clasificación opto-electrónica de manzanas, por m
 
 # Materiales:
 Sensores TCS3200.
+
 Sensor infrarrojo.
+
 Servomotores.
 Motores paso a paso.
 FPGA.
