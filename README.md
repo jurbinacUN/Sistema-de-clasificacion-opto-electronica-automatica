@@ -7,6 +7,7 @@ Sensores TCS3200.
 Sensor infrarrojo.
 
 Servomotores.
+
 Motores paso a paso.
 
 FPGA.
