@@ -14,9 +14,9 @@ El objetivo principal es discriminar o clasificar entre "producto válido" (manz
 ## Hardware y materiales:
 La lista de componentes electrónicos y materiales utilizados para el montaje físico:
 ### Electrónica
-*Sensores TCS3200.
+* Sensores TCS3200.
 
-*Sensor infrarrojo.
+* Sensor infrarrojo.
 
 Servomotores.
 
