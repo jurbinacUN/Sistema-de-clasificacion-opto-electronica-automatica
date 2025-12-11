@@ -11,7 +11,9 @@ El objetivo principal es discriminar o clasificar entre "producto válido" (manz
 
 **Cualquier otro color:** Rechazada (un servomotor la saca de la cinta).
 
-## Materiales:
+## Hardware y materiales:
+La lista de componentes electrónicos y materiales utilizados para el montaje físico:
+### Electrónica
 Sensores TCS3200.
 
 Sensor infrarrojo.
@@ -21,7 +23,7 @@ Servomotores.
 Motores paso a paso.
 
 FPGA.
-
+### Construcción física
 Lámina de MDF.
 
 Tubos de PVC.
