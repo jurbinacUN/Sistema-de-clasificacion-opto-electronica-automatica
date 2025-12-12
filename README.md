@@ -99,3 +99,71 @@ La estructura final incluye:
 ### RTL
 
 ### Prototipo físico
+La construcción del prototipo se realizó integrando elementos mecánicos, electrónicos y ópticos cuidadosamente alineados. A continuación se describen los componentes y el proceso de ensamblaje.
+
+1. Estructura Mecánica
+
+* Base de MDF para sostener la electrónica y la cinta transportadora.
+
+* Cinta transportadora con motor paso a paso para control de velocidad.
+
+* Guías laterales para mantener estable la fruta.
+
+* Soporte del sensor óptico, ajustado al tamaño de la manzana.
+
+* Carcasa óptica: estructura cerrada donde se ubica el sensor de color y el sensor infrarrojo, diseñada para bloquear luz externa.
+
+2. Módulo Optoelectrónico
+
+Incluye:
+
+* Sensor de color fijado a una placa rígida.
+
+* Conectores aislados para reducir ruido eléctrico.
+
+El módulo se instala justo por encima de la banda transportadora, alineado con el centro de la manzana.
+
+3. Unidad Electrónica (FPGA y Controladores)
+
+Ubicada al lado de laestructura principal, incluye:
+
+* FPGA encargada del procesamiento digital.
+
+* Pines dedicados para señales PWM hacia los servomotores.
+
+* Módulo de potencia para los motores de la cinta transportadora.
+
+La FPGA se ubica lateralmente en la estructura para fácil acceso.
+
+4. Sistema de Desviación Mecánica
+
+Cada categoría de color posee una compuerta móvil accionada por un servomotor.
+Construcción:
+
+* Eje de madera ligera unidos a los servos.
+
+El diseño asegura que el cambio de posición del servo sea rápido y preciso para que la manzana no pase sin clasificación.
+
+5. Integración Final
+
+* Se instala la cinta transportadora en el centro de la base.
+
+* Sobre ella se fija la carcasa óptica con el sensor de color y el sensor infrarrojo.
+
+* Los servomotores se posicionan a la salida de la cinta.
+
+* Se cablea la FPGA al sensor y a los servos.
+
+* Se realizan pruebas estáticas para calibrar:
+
+* nivel de iluminación,
+
+* distancia óptica,
+
+* velocidad de la cinta,
+
+* umbrales de color.
+
+Finalmente se ejecutan pruebas completas con manzanas.
+
+El prototipo resultante permite la clasificación automática continua, siendo un sistema funcional, robusto y replicable en entornos de laboratorio o premisas industriales de baja escala.
