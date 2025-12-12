@@ -1,4 +1,4 @@
-# Sistema de clasificacion opto electronica automatica
+# Sistema de clasificación opto-electrónica automática
 Diseño e implementación de un sistema optoelectrónico automático para identificación y clasificación de manzanas basado en detección de colory control electromecánico.
 
 ## Introducción:
