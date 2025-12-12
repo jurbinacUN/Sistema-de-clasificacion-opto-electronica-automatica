@@ -2,16 +2,26 @@
 Diseño e implementación de un sistema optoelectrónico automático para identificación y clasificación de manzanas basado en detección de colory control electromecánico.
 
 ## Introducción:
-Este proyecto consiste en el diseño y prototipado de un sistema de identificación y clasificación opto-electrónica de manzanas, por medio de sensores TCS3200; donde las manzanas son transportadas a través de una cinta transportadora. El sistema emula un proceso de control de calidad industrial para la selección de frutas.
+La automatización de procesos agroindustriales es un requerimiento creciente para garantizar calidad, reducir tiempos de producción y minimizar el manejo manual de alimentos. Este proyecto presenta el desarrollo de un sistema optoelectrónico automático capaz de identificar manzanas según su color —clasificando entre manzanas rojas, verdes y amarillas— mientras se desplazan por una cinta transportadora.
 
-### Objetivo:
-El objetivo principal es discriminar o clasificar entre "producto válido" (manzanas) y "objetos extraños/desechos". El sistema opera bajo la siguiente lógica:
+Para lograrlo, se integraron tecnologías de sensado óptico, procesamiento digital con FPGA y accionamiento mecánico mediante servomotores, permitiendo que cada manzana sea clasificada en tiempo real y desviada hacia la bandeja correspondiente.
 
-**Manzana verde:** Aceptada (la cinta continúa).
+## Objetivo:
+###Objetivo general
 
-**Manzana roja:** Aceptada (la cinta continúa).
+Desarrollar un sistema automático que detecte el color de manzanas transportadas en una banda mecánica y realice su clasificación mediante actuadores controlados digitalmente.
 
-**Cualquier otro color:** Rechazada (un servomotor la saca de la cinta).
+###Objetivos específicos
+
+Implementar un módulo digital encargado de medir las señales ópticas provenientes de un sensor de color.
+
+Diseñar la lógica de decisión para determinar el color predominante de cada manzana.
+
+Controlar servomotores a través de señales PWM para desviar las manzanas a diferentes compartimientos.
+
+Integrar el sensado, procesamiento digital y actuación mecánica en un prototipo funcional.
+
+Evaluar el desempeño bajo condiciones reales de iluminación y movimiento en la cinta transportadora.
 
 ## Hardware y materiales:
 La lista de componentes electrónicos y materiales utilizados para el montaje físico:
