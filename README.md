@@ -13,15 +13,15 @@ Desarrollar un sistema automático que detecte el color de manzanas transportada
 
 ### Objetivos específicos
 
-Implementar un módulo digital encargado de medir las señales ópticas provenientes de un sensor de color.
+1. Implementar un módulo digital encargado de medir las señales ópticas provenientes de un sensor de color.
 
-Diseñar la lógica de decisión para determinar el color predominante de cada manzana.
+2. Diseñar la lógica de decisión para determinar el color predominante de cada manzana.
 
-Controlar servomotores a través de señales PWM para desviar las manzanas a diferentes compartimientos.
+3. Controlar servomotores a través de señales PWM para desviar las manzanas a diferentes compartimientos.
 
-Integrar el sensado, procesamiento digital y actuación mecánica en un prototipo funcional.
+4. Integrar el sensado, procesamiento digital y actuación mecánica en un prototipo funcional.
 
-Evaluar el desempeño bajo condiciones reales de iluminación y movimiento en la cinta transportadora.
+5. Evaluar el desempeño bajo condiciones reales de iluminación y movimiento en la cinta transportadora.
 
 ## Hardware y materiales:
 La lista de componentes electrónicos y materiales utilizados para el montaje físico:
