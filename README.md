@@ -167,4 +167,5 @@ El diseño asegura que el cambio de posición del servo sea rápido y preciso pa
 Finalmente se ejecutan pruebas completas con manzanas.
 
 El prototipo resultante permite la clasificación automática continua, siendo un sistema funcional, robusto y replicable en entornos de laboratorio o premisas industriales de baja escala.
+
 <img width="1223" height="687" alt="image" src="https://github.com/user-attachments/assets/10fcc421-1a95-42da-885c-928c30749ca0" />
