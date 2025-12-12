@@ -23,31 +23,88 @@ Desarrollar un sistema automático que detecte el color de manzanas transportada
 
 5. Evaluar el desempeño bajo condiciones reales de iluminación y movimiento en la cinta transportadora.
 
-## Hardware y materiales:
-La lista de componentes electrónicos y materiales utilizados para el montaje físico:
-### Electrónica
-* Sensores TCS3200.
+## Metodología y Desarrollo
+### Descripción general del sistema
 
-* Sensor infrarrojo.
+1. El sistema está compuesto por cuatro bloques principales:
 
-* Servomotores.
+2. Cinta transportadora: mueve las manzanas a una velocidad constante hacia el área de detección.
 
-* Motores paso a paso.
+3. Módulo optoelectrónico: utiliza un sensor RGB programable que mide la intensidad de luz reflejada.
 
-* FPGA.
-### Construcción física
-* Lámina de MDF.
+4. Unidad de Procesamiento Digital (FPGA): ejecuta algoritmos de muestreo, filtrado, comparación y clasificación cromática.
 
-* Tubos de PVC.
+5. Sistema de desviación con servomotores: cambia su posición según la categoría asignada, dirigiendo la fruta hacia la bandeja correcta.
 
-* Neumático.
-## Funcionamiento y lógica:
-El sistema funciona mediante un bucle de control continuo:
+### Sensado óptico
 
-1. **Arranque:** Se inicia el funcionamiento de los motores que mueven la cinta transportadora, además se inicia la detección de los sensores y el pocesamiento de la FPGA.
-   
-2. **Detección:** El objeto pasa frente al sensor infrarrojo que detecta la presencia de un objeto, luego pasa frente al sensor de color que captura los datos de la frecuencia de la luz capturada.
+Se empleó un sensor óptico RGB basado en fotodiodos con filtros selectivos que convierte la luz reflejada por la superficie de la manzana en una señal digital proporcional.
+Las reflexiones varían según el color dominante:
 
-3. **Procesamiento:** La FPGA compara las lecturas con rangos precalibrados.
+* Rojo: alta respuesta en el canal R.
 
-4. **Funcionamiento y lógica:**
+* Verde: mayor componente G.
+
+* Amarillo: señales similares en R y G con menor contribución del canal B.
+
+Para asegurar precisión se incluyó:
+
+* fuente de luz blanca calibrada,
+
+* carcasa opaca para reducir interferencia ambiental,
+
+* ventana óptica que garantiza la distancia fija entre sensor y fruta.
+
+### Procesamiento digital en FPGA
+
+El procesamiento se implementó en lenguaje Verilog y consiste en:
+
+a) Muestreo del sensor
+
+El FPGA mide la frecuencia o nivel digital asociado a cada canal (R, G, B).
+Estas mediciones se normalizan para evitar saturaciones.
+
+b) Algoritmo de clasificación
+
+Se utilizan comparadores y umbrales definidos experimentalmente:
+
+* Si R > G y R > B → Manzana Roja
+
+* Si G > R y G > B → Manzana Verde
+
+* Si R ≈ G > B → Manzana Amarilla
+
+Un bloque de temporización asegura que solo se evalúe el color cuando la fruta está correctamente alineada con el sensor.
+
+c) Interfaz visual
+
+LEDs indicadores permiten verificar el estado del sistema durante pruebas.
+
+### Control de servomotores
+
+Para cada categoría existe una compuerta mecánica accionada por un servomotor.
+El FPGA genera señales PWM con:
+
+* período de 20 ms
+
+* ciclos de trabajo entre 5–10% para posicionar el eje
+
+Cada color produce un ángulo específico del servo que dirige la manzana hacia:
+
+* Bandeja A → Rojas
+
+* Bandeja B → Verdes
+
+* Bandeja C → Amarillas
+
+### Integración mecánica
+
+La estructura final incluye:
+
+* una cinta transportadora continua,
+
+* un área de sensado aislada ópticamente,
+
+* un sistema de compuertas móviles con servomotores,
+
+* bandejas recolectoras alineadas con cada desviador.
