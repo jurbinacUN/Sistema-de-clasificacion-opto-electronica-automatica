@@ -99,6 +99,15 @@ La estructura final incluye:
 
 
 ### RTL
+#### top.v
+<img width="1042" height="1548" alt="image" src="https://github.com/user-attachments/assets/7bcc79c7-bfa7-4080-a7b3-68421557855e" />
+#### Sensor de color
+<img width="1084" height="584" alt="image" src="https://github.com/user-attachments/assets/b4c57d31-af63-4c7a-92b9-63093ffb0829" />
+#### Servomotores
+<img width="642" height="405" alt="image" src="https://github.com/user-attachments/assets/9a978476-7880-4a1d-b6ca-90e84ef7a549" />
+#### Motores paso a paso
+<img width="616" height="421" alt="image" src="https://github.com/user-attachments/assets/92217755-9c1d-46d3-86cf-fe1edf3983a5" />
+
 
 ### Prototipo físico
 La construcción del prototipo se realizó integrando elementos mecánicos, electrónicos y ópticos cuidadosamente alineados. A continuación se describen los componentes y el proceso de ensamblaje.
