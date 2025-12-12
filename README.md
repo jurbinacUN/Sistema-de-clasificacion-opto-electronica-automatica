@@ -90,3 +90,12 @@ La estructura final incluye:
 * un área de sensado aislada ópticamente,
 
 * un sistema de compuertas móviles con servomotores,
+
+
+## Diseño del prototipo
+
+### Diagrama de flujo
+
+### RTL
+
+### Prototipo físico
