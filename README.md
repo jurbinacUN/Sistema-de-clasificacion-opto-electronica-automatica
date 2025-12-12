@@ -45,7 +45,7 @@ Las reflexiones varían según el color dominante:
 
 * Verde.
 
-* Amarillo.
+* Otro color.
 
 Para asegurar precisión se incluyó:
 
