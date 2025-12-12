@@ -2,7 +2,7 @@
 Diseño e implementación de un sistema optoelectrónico automático para identificación y clasificación de manzanas basado en detección de colory control electromecánico.
 
 ## Introducción:
-La automatización de procesos agroindustriales es un requerimiento creciente para garantizar calidad, reducir tiempos de producción y minimizar el manejo manual de alimentos. Este proyecto presenta el desarrollo de un sistema optoelectrónico automático capaz de identificar manzanas según su color —clasificando entre manzanas rojas, verdes y amarillas— mientras se desplazan por una cinta transportadora.
+La automatización de procesos en la industria alimenticia es un requerimiento creciente para garantizar calidad, reducir tiempos de producción y minimizar el manejo manual de alimentos. Este proyecto presenta el desarrollo de un sistema optoelectrónico automático capaz de identificar manzanas según su color —clasificando entre manzanas rojas, verdes y amarillas— mientras se desplazan por una cinta transportadora.
 
 Para lograrlo, se integraron tecnologías de sensado óptico, procesamiento digital con FPGA y accionamiento mecánico mediante servomotores, permitiendo que cada manzana sea clasificada en tiempo real y desviada hacia la bandeja correspondiente.
 
