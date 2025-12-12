@@ -7,11 +7,11 @@ La automatización de procesos agroindustriales es un requerimiento creciente pa
 Para lograrlo, se integraron tecnologías de sensado óptico, procesamiento digital con FPGA y accionamiento mecánico mediante servomotores, permitiendo que cada manzana sea clasificada en tiempo real y desviada hacia la bandeja correspondiente.
 
 ## Objetivo:
-###Objetivo general
+### Objetivo general
 
 Desarrollar un sistema automático que detecte el color de manzanas transportadas en una banda mecánica y realice su clasificación mediante actuadores controlados digitalmente.
 
-###Objetivos específicos
+### Objetivos específicos
 
 Implementar un módulo digital encargado de medir las señales ópticas provenientes de un sensor de color.
 
