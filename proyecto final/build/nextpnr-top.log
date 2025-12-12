@@ -1,0 +1,357 @@
+Info: constrained 'mclk' to bel 'X24/Y0/io1'
+Info: constrained 'sensor_clk' to bel 'X0/Y18/io1'
+Info: constrained 'detecto' to bel 'X0/Y20/io1'
+Info: constrained 'pwm_out1' to bel 'X0/Y11/io0'
+Info: constrained 'pwm_out2' to bel 'X0/Y12/io0'
+Info: constrained 'motor1' to bel 'X0/Y17/io0'
+Info: constrained 'motor2' to bel 'X0/Y16/io1'
+Info: constrained 'motor3' to bel 'X0/Y16/io0'
+Info: constrained 'motor4' to bel 'X0/Y12/io1'
+Info: constrained 'motor5' to bel 'X0/Y5/io1'
+Info: constrained 'motor6' to bel 'X0/Y6/io1'
+Info: constrained 'motor7' to bel 'X0/Y5/io0'
+Info: constrained 'motor8' to bel 'X0/Y6/io0'
+Info: constrained 'filtro_sel[0]' to bel 'X0/Y20/io0'
+Info: constrained 'filtro_sel[1]' to bel 'X0/Y18/io0'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:      350 LCs used as LUT4 only
+Info:      231 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:       46 LCs used as DFF only
+Info: Packing carries..
+Info:      438 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:      218 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting mclk$SB_IO_IN (fanout 277)
+Info: promoting detecto_SB_LUT4_I1_I2_SB_LUT4_I2_O [reset] (fanout 32)
+Info: promoting motor2_SB_DFFE_Q_E [reset] (fanout 32)
+Info: promoting motor6_SB_DFFE_Q_E [reset] (fanout 32)
+Info: promoting sensor_clk_SB_LUT4_I3_O [reset] (fanout 32)
+Info: promoting cont_iniciado [cen] (fanout 32)
+Info: promoting sensor_clk_SB_LUT4_I3_1_O [cen] (fanout 32)
+Info: Constraining chains...
+Info:       27 LCs used to legalise carry chains.
+Info: Checksum: 0x1ce6e775
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:   876/ 7680    11%
+Info: 	        ICESTORM_RAM:     0/   32     0%
+Info: 	               SB_IO:    15/  256     5%
+Info: 	               SB_GB:     7/    8    87%
+Info: 	        ICESTORM_PLL:     0/    2     0%
+Info: 	         SB_WARMBOOT:     0/    1     0%
+
+Info: Placed 15 cells based on constraints.
+Info: Creating initial analytic placement for 214 cells, random placement wirelen = 15796.
+Info:     at initial placer iter 0, wirelen = 461
+Info:     at initial placer iter 1, wirelen = 339
+Info:     at initial placer iter 2, wirelen = 335
+Info:     at initial placer iter 3, wirelen = 327
+Info: Running main analytical placer, max placement attempts per cell = 100800.
+Info:     at iteration #1, type ICESTORM_LC: wirelen solved = 360, spread = 4411, legal = 4561; time = 0.01s
+Info:     at iteration #1, type SB_GB: wirelen solved = 4520, spread = 4677, legal = 4685; time = 0.13s
+Info:     at iteration #1, type ALL: wirelen solved = 366, spread = 4402, legal = 4616; time = 0.01s
+Info:     at iteration #2, type ICESTORM_LC: wirelen solved = 664, spread = 2918, legal = 3615; time = 0.01s
+Info:     at iteration #2, type SB_GB: wirelen solved = 3485, spread = 3590, legal = 3650; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 497, spread = 3198, legal = 3515; time = 0.01s
+Info:     at iteration #3, type ICESTORM_LC: wirelen solved = 638, spread = 3287, legal = 3620; time = 0.01s
+Info:     at iteration #3, type SB_GB: wirelen solved = 3507, spread = 3598, legal = 3675; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 449, spread = 3503, legal = 3874; time = 0.01s
+Info:     at iteration #4, type ICESTORM_LC: wirelen solved = 644, spread = 3808, legal = 4295; time = 0.01s
+Info:     at iteration #4, type SB_GB: wirelen solved = 4169, spread = 4265, legal = 4330; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 441, spread = 3429, legal = 4029; time = 0.01s
+Info:     at iteration #5, type ICESTORM_LC: wirelen solved = 568, spread = 2773, legal = 3055; time = 0.01s
+Info:     at iteration #5, type SB_GB: wirelen solved = 2942, spread = 3032, legal = 3072; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 511, spread = 3784, legal = 4090; time = 0.01s
+Info:     at iteration #6, type ICESTORM_LC: wirelen solved = 737, spread = 3783, legal = 4034; time = 0.01s
+Info:     at iteration #6, type SB_GB: wirelen solved = 3896, spread = 4008, legal = 4048; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 484, spread = 3521, legal = 4074; time = 0.01s
+Info:     at iteration #7, type ICESTORM_LC: wirelen solved = 682, spread = 3329, legal = 3740; time = 0.01s
+Info:     at iteration #7, type SB_GB: wirelen solved = 3601, spread = 3711, legal = 3756; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 531, spread = 3078, legal = 3581; time = 0.01s
+Info: HeAP Placer Time: 0.42s
+Info:   of which solving equations: 0.20s
+Info:   of which spreading cells: 0.01s
+Info:   of which strict legalisation: 0.15s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 46, wirelen = 3515
+Info:   at iteration #5: temp = 0.000000, timing cost = 50, wirelen = 2232
+Info:   at iteration #10: temp = 0.000000, timing cost = 73, wirelen = 2057
+Info:   at iteration #15: temp = 0.000000, timing cost = 73, wirelen = 2029
+Info:   at iteration #17: temp = 0.000000, timing cost = 72, wirelen = 2019 
+Info: SA placement time 0.45s
+
+Info: Max frequency for clock 'mclk$SB_IO_IN_$glb_clk': 74.48 MHz (PASS at 12.00 MHz)
+
+Info: Max delay <async>                        -> posedge mclk$SB_IO_IN_$glb_clk: 8.66 ns
+Info: Max delay posedge mclk$SB_IO_IN_$glb_clk -> <async>                       : 2.50 ns
+
+Info: Checksum: 0xf200e992
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 2565 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       93        628 |   93   628 |      1661|       1.57       1.57|
+Info:       2000 |      246       1172 |  153   544 |       828|       0.04       1.60|
+Info:       2882 |      299       2000 |   53   828 |         0|       0.64       2.24|
+Info: Routing complete.
+Info: Router1 time 2.24s
+Info: Checksum: 0x9ff5a132
+
+Info: Critical path report for clock 'mclk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source contador_main_SB_DFFESR_Q_31_DFFLC.O
+Info:  0.6  1.1    Net contador_main[0] (6,5) -> (6,5)
+Info:                Sink contador_main_SB_DFFESR_Q_31_D_SB_LUT4_O_31_LC.I3
+Info:                Defined in:
+Info:                  top.v:80.27-80.44
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  1.4  Source contador_main_SB_DFFESR_Q_31_D_SB_LUT4_O_31_LC.O
+Info:  0.6  2.0    Net contador_main_SB_DFFESR_Q_31_D[0] (6,5) -> (6,6)
+Info:                Sink $nextpnr_ICESTORM_LC_24.I1
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  2.3  Source $nextpnr_ICESTORM_LC_24.COUT
+Info:  0.0  2.3    Net $nextpnr_ICESTORM_LC_24$O (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_19$CARRY.CIN
+Info:  0.1  2.4  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_19$CARRY.COUT
+Info:  0.0  2.4    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[1] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_8$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  2.5  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_8$CARRY.COUT
+Info:  0.0  2.5    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[2] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_6$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  2.7  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_6$CARRY.COUT
+Info:  0.0  2.7    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[3] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  2.8  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_5$CARRY.COUT
+Info:  0.0  2.8    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[4] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  2.9  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_4$CARRY.COUT
+Info:  0.0  2.9    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[5] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.0  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3$CARRY.COUT
+Info:  0.0  3.0    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[6] (6,6) -> (6,6)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.2  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2$CARRY.COUT
+Info:  0.2  3.4    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[7] (6,6) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.5  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1$CARRY.COUT
+Info:  0.0  3.5    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[8] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.6  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO$CARRY.COUT
+Info:  0.0  3.6    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[9] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_29$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.7  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_29$CARRY.COUT
+Info:  0.0  3.7    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[10] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_28$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  3.9  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_28$CARRY.COUT
+Info:  0.0  3.9    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[11] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_27$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.0  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_27$CARRY.COUT
+Info:  0.0  4.0    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[12] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_26$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.1  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_26$CARRY.COUT
+Info:  0.0  4.1    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[13] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_25$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.2  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_25$CARRY.COUT
+Info:  0.0  4.2    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[14] (6,7) -> (6,7)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_24$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.4  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_24$CARRY.COUT
+Info:  0.2  4.6    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[15] (6,7) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_23$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.7  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_23$CARRY.COUT
+Info:  0.0  4.7    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[16] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_22$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.8  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_22$CARRY.COUT
+Info:  0.0  4.8    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[17] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_21$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  4.9  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_21$CARRY.COUT
+Info:  0.0  4.9    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[18] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_20$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.1  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_20$CARRY.COUT
+Info:  0.0  5.1    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[19] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_18$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.2  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_18$CARRY.COUT
+Info:  0.0  5.2    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[20] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_17$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.3  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_17$CARRY.COUT
+Info:  0.0  5.3    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[21] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_16$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.5  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_16$CARRY.COUT
+Info:  0.0  5.5    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[22] (6,8) -> (6,8)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_15$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.6  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_15$CARRY.COUT
+Info:  0.2  5.8    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[23] (6,8) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_14$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  5.9  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_14$CARRY.COUT
+Info:  0.0  5.9    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[24] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_13$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.0  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_13$CARRY.COUT
+Info:  0.0  6.0    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[25] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_12$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.2  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_12$CARRY.COUT
+Info:  0.0  6.2    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[26] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_11$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.3  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_11$CARRY.COUT
+Info:  0.0  6.3    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[27] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_10$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.4  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_10$CARRY.COUT
+Info:  0.0  6.4    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[28] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_9$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.5  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_9$CARRY.COUT
+Info:  0.0  6.5    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[29] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_7$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.7  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_7$CARRY.COUT
+Info:  0.0  6.7    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3[30] (6,9) -> (6,9)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.CIN
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.1  6.8  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.COUT
+Info:  0.5  7.2    Net detecto_SB_LUT4_I1_I2_SB_LUT4_O_I0[3] (6,9) -> (6,10)
+Info:                Sink detecto_SB_LUT4_I1_I2_SB_LUT4_O_LC.I3
+Info:                Defined in:
+Info:                  top.v:82.33-82.62
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/arith_map.v:37.23-37.25
+Info:  0.3  7.6  Source detecto_SB_LUT4_I1_I2_SB_LUT4_O_LC.O
+Info:  2.4  9.9    Net detecto_SB_LUT4_I1_I2[1] (6,10) -> (2,23)
+Info:                Sink detecto_SB_LUT4_I1_LC.I2
+Info:                Defined in:
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.4 10.3  Source detecto_SB_LUT4_I1_LC.O
+Info:  1.6 11.9    Net servo2.state_SB_DFFESR_Q_E (2,23) -> (2,23)
+Info:                Sink servo2.state_SB_DFFESR_Q_DFFLC.CEN
+Info:  0.1 12.0  Setup servo2.state_SB_DFFESR_Q_DFFLC.CEN
+Info: 5.8 ns logic, 6.2 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge mclk$SB_IO_IN_$glb_clk':
+Info: curr total
+Info:  0.0  0.0  Source sensor_clk$sb_io.D_IN_0
+Info:  2.5  2.5    Net sensor_clk$SB_IO_IN (0,18) -> (20,17)
+Info:                Sink sensor_clk_SB_LUT4_I3_LC.I3
+Info:                Defined in:
+Info:                  /home/juannova/gitPackages/miniconda3/envs/digital/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:  0.3  2.8  Source sensor_clk_SB_LUT4_I3_LC.O
+Info:  1.6  4.4    Net sensor_clk_SB_LUT4_I3_O (20,17) -> (33,17)
+Info:                Sink $gbuf_sensor_clk_SB_LUT4_I3_O_$glb_sr.USER_SIGNAL_TO_GLOBAL_BUFFER
+Info:  0.6  5.0  Source $gbuf_sensor_clk_SB_LUT4_I3_O_$glb_sr.GLOBAL_BUFFER_OUTPUT
+Info:  0.5  5.5    Net sensor_clk_SB_LUT4_I3_O_$glb_sr (33,17) -> (2,18)
+Info:                Sink sensor.counter_SB_DFFSR_Q_D_SB_LUT4_O_LC.SR
+Info:  0.1  5.6  Setup sensor.counter_SB_DFFSR_Q_D_SB_LUT4_O_LC.SR
+Info: 1.0 ns logic, 4.5 ns routing
+
+Info: Critical path report for cross-domain path 'posedge mclk$SB_IO_IN_$glb_clk' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source servo1.state_SB_LUT4_I3_LC.O
+Info:  2.2  2.8    Net pwm_out1$SB_IO_OUT (1,24) -> (0,11)
+Info:                Sink pwm_out1$sb_io.D_OUT_0
+Info:                Defined in:
+Info:                  top.v:43.22-47.5
+Info:                  ./servomotor_finish.v:4.16-4.23
+Info: 0.5 ns logic, 2.2 ns routing
+
+Info: Max frequency for clock 'mclk$SB_IO_IN_$glb_clk': 83.03 MHz (PASS at 12.00 MHz)
+
+Info: Max delay <async>                        -> posedge mclk$SB_IO_IN_$glb_clk: 5.57 ns
+Info: Max delay posedge mclk$SB_IO_IN_$glb_clk -> <async>                       : 2.79 ns
+
+Info: Program finished normally.
