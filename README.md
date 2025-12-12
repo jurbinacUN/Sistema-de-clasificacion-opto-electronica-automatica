@@ -95,6 +95,8 @@ La estructura final incluye:
 ## Diseño del prototipo
 
 ### Diagrama de flujo
+<img width="571" height="760" alt="image" src="https://github.com/user-attachments/assets/847bb76f-9e5a-4bb7-9da4-ed36a4252dea" />
+
 
 ### RTL
 
